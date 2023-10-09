@@ -9,7 +9,7 @@ var tpj=jQuery;
 								jsFileLocation:"assets/",
 								sliderLayout:"boxed",
 								dottedOverlay:"none",
-								delay:4000,
+								delay:3000,
 								navigation: {
 									keyboardNavigation:"off",
 									keyboard_direction: "horizontal",
@@ -52,6 +52,20 @@ var tpj=jQuery;
 						}
 					});	/*ready*/
 
+
+const fitfabWrap = document.querySelectorAll(".fitfab-gym-wrap");
+
+const checkfitfabWrap = () => {
+	const triggerBottom = (window.innerHeight / 5) * 4;
+	fitfabWrap.forEach((fitfab) => {
+		const fitfabTop = fitfab.getBoundingClientRect().top;
+		if(fitfabTop < triggerBottom) fitfab.classList.add('show');
+		else fitfab.classList.remove('show')
+	})
+};
+
+window.addEventListener("scroll", checkfitfabWrap);
+checkfitfabWrap()
 
 
 

@@ -110,3 +110,11 @@ websiteApp.controller('FormController', function($scope, $http, $timeout,$locati
 		}
 	   };
 }); 
+
+const openButton = document.querySelector("[data-open-model]");
+const modal = document.querySelector("[data-modal]")
+
+openButton.addEventListener("click", () => {
+	console.log('first')
+	modal.showModal()
+})

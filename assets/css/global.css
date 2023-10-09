@@ -30,6 +30,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	scroll-behavior: smooth;
+	
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -241,11 +243,12 @@ ol ol {
  3.0.5) General Text Formatting
  -----------------------------------*/
 p {
-	font-size: 15px;
-	color: #818799;
-	line-height: 24px;
-	font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+	
+		font-size: 20px;
+		color: #A13941FF;
+		line-height: 24px;
+		font-weight: 400;
+		font-family: 'Oswald', sans-serif !important;
 
 }
 blockquote, cite, q, var, dfn {
@@ -587,9 +590,10 @@ a.link:hover, a.link:focus, .schedule-slider .slider-item-caption a.link:hover {
  5.) Header Styles
  ------------------------------*/
 /*Header-one style start here*/
+
 #header.header-one {
-	padding-top: 41px;
-	padding-bottom: 25px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -597,19 +601,30 @@ a.link:hover, a.link:focus, .schedule-slider .slider-item-caption a.link:hover {
 	z-index: 100;
 	right: 0;
 }
+
+#header.header-one img {
+    max-width: 180px;
+    height: auto;
+    width: 100%;
+}
+
+
 .header-one .logo {
 	padding-top: 5px;
 	display: block;
+	/* text-align: center; */
 }
 .header-one .navbar-nav > li > a {
 	padding-top: 9px;
 	padding-bottom: 7px;
 	font-size: 20px;
-	color: #a7abb7;
+	color: #fff;
 	text-transform: uppercase;
 	font-family: 'archivo_narrowbold';
 	position: relative;
+	font-weight: bolder;
 }
+
 .header-one .cart {
 	width: 38px;
 	height: 38px;
@@ -635,6 +650,7 @@ a.link:hover, a.link:focus, .schedule-slider .slider-item-caption a.link:hover {
 }
 .header-one .navbar-nav {
 	padding-left: 39px;
+	display: flex;
 }
 .header-one .navbar-collapse {
 	padding-right: 0;
@@ -1044,8 +1060,10 @@ body #header.fixed.intelligent.fix .main-header {
 	position: relative;
 }
 .header {
-	position: relative;
+	/* position: relative; */
 	z-index: 9999;
+	position: sticky;
+	position: fixed;
 }
 
 .banner-style.top-m {
@@ -1093,6 +1111,14 @@ body #header.fixed.intelligent.fix .main-header {
 	margin-top: 21px;
 	line-height: 1.4;
 	margin-bottom: 19px;
+	color: #fff;
+}
+
+.bottom-footer p{
+	margin-top: 21px;
+	line-height: 1.4;
+	margin-bottom: 19px;
+	color: #fff;
 }
 .footer-one .class-time {
 	padding-left: 35px;
@@ -1141,7 +1167,7 @@ body #header.fixed.intelligent.fix .main-header {
 	padding-left: 15px;
 }
 .footer-one .boxing-inner {
-	background: url(../images/footer-boxing-img.jpg) 0 0 no-repeat;
+	background: url(../images/mma-basics.jpg) 0 0 no-repeat;
 	width: 100%;
 	min-height: 121px;
 	margin-top: 21px;
@@ -1402,9 +1428,32 @@ body #header.fixed.intelligent.fix .main-header {
 /*All hover effect style*/
 .nav > li > a:hover, .nav > li > a:focus, .nav > li.active > a {
 	background: none;
+	
+}
+.nav > li > a:hover{
+	font-size: 22px;
 	color: #ffffff;
+	animation: glowing-shadow 2s infinite;
+	border-radius: 8%;
 }
 
+@keyframes glowing-shadow {
+	0% {
+	  /* Initial glow settings */
+	  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8); /* Adjust the glow color and size as needed */
+	  /* font-size: 16px; Optional: Add initial font size again */
+	}
+	50% {
+	  /* Increased glow settings */
+	  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Adjust the glow color and size as needed */
+	  /* font-size: 20px; Adjust the font size for the hover effect */
+	}
+	100% {
+	  /* Back to the initial glow settings */
+	  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8); /* Adjust the glow color and size as needed */
+	  /* font-size: 16px; Optional: Add initial font size again */
+	}
+  }
 /*Some extra gloabel styl e start here*/
 .slider-content {
 	padding: 25px 22px 28px;
@@ -1413,14 +1462,30 @@ body #header.fixed.intelligent.fix .main-header {
 .slider-content h3 {
 	color: #3b3e47;
 	font-family: 'Oswald', sans-serif !important;
+	
 }
 .slider-content span {
 	font-size: 14px;
 	color: #868c9e;
 	font-family: 'Oswald', sans-serif;
 	margin-top: 8px;
-	display: block;
+	/* display: block; */
 }
+.slider-content span a{
+	display: inline-block;
+	text-align: center;
+	border-radius: 50%;
+	color: #0e0d0d;
+	font-size: 18px;
+	margin-left: 5px;
+	font-weight: bold;
+	justify-content: space-between;
+	transition: background-color 0.3s ease;
+}
+
+.slider-content span a:hover {
+	color: #000;
+  }
 .block-img img {
 	display: block;
 	width: 100%;

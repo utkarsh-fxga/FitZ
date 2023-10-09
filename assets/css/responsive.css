@@ -1106,10 +1106,15 @@
 	
 	#header.header-one {
 		padding-top: 20px;
-		padding-bottom: 3px;
 	}
 	.homepage-1 .team-info_wrap .head-global {
 		margin-top: 100px;
+	}
+	section.slider-revo .callout h1 {
+		font-size: 42px;
+	}
+	section.slider-revo .desc{
+		font-size: 23px;
 	}
 	
 	.homepage-2 #owl-schedule .owl-controls, .homepage-2 #owl-trainers .owl-controls, .homepage-3 #owl-schedule-home-3 .owl-controls {
@@ -1152,11 +1157,12 @@
 	.header-one .navbar-nav {
 		padding: 10px 0px;
 		margin: 0;
+		flex-wrap: wrap;
 	}
 	.navbar-collapse {
 		position: absolute;
 		left: 0;
-		top: 72px;
+		top: 85px;
 		width: 100%;
 		padding: 0;
 		background: rgba(0,0,0,0.9);

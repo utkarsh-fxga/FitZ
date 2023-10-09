@@ -1,0 +1,158 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.logo {
+  display: flex;
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 5px;
+  width: 170px;
+  height: 75px;
+}
+.container {
+  margin: 20px;
+  padding: 20px;
+}
+
+.assessmentContainer {
+  margin: 20px;
+  padding: 20px;
+}
+
+h4 {
+  font-size: 28px;
+  color: #fff;
+}
+
+h4 {
+  font-size: 24px;
+  color: #000;
+}
+
+h3 {
+  font-size: 20px;
+  color: #000;
+}
+
+p {
+  line-height: 1.5;
+  color: #666;
+}
+
+  /* Styling for the close button */
+
+  
+.week {
+  /* background-color: #f0f0f0;
+  padding: 10px;
+  margin: 15px;
+  border: 1px solid #ccc;
+  height: 150px; */
+  border-radius: 20px;
+  /* width: calc(15%); */
+  float: left;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); */
+  cursor: pointer;
+}
+
+.week {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 15px;
+    border: 1px solid #ccc;
+    height: 300px;
+    border-radius: 20px;
+    width: calc(45%);
+    float: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .week {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    height: 300px;
+    border-radius: 20px;
+    width: 100%;
+    float: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  }
+}
+
+.week1 {
+  background-image: url("../images/week1.jpg");
+  background-size: cover;
+}
+
+.week2 {
+  background-image: url("../images/week2.jpg");
+  background-size: cover;
+}
+.week3 {
+  background-image: url("../images/week3.jpg");
+  background-size: cover;
+}
+.week4 {
+  background-image: url("../images/week4.jpg");
+  background-size: cover;
+}
+.week5 {
+  background-image: url("../images/week5.jpg");
+  background-size: cover;
+}
+.week6 {
+  background-image: url("../images/week6.jpg");
+  background-size: cover;
+}
+.week7 {
+  background-image: url("../images/week7.jpg");
+  background-size: cover;
+}
+
+.footer {
+  clear: both;
+  background-color: #1e1e28;
+}
+
+.copy-right p {
+  color: #fff;
+  font-size: large;
+}
+.theme-design {
+  color: #fff;
+  font-size: large;
+  font-weight: 600;
+}
+/* .row {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+} */
+.socialicons ul {
+  display: flex;
+  margin-left: 20px;
+  list-style: none;
+}
+.socialicons ul li {
+  margin-left: 20px;
+  list-style: none;
+}
+.fab {
+  /* width: 25px;
+    height: 25px; */
+  color: #666;
+}

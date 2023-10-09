@@ -27,6 +27,59 @@
 /*1.1) Homepage_1 style*/
 /*homepage slider style start here*/
 
+section.slider-revo {
+	position: relative;
+}
+
+section.slider-revo:after{
+	content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+	transform: none;
+	bottom: auto;
+}
+
+section.slider-revo .callout {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    margin: auto;
+}
+section.slider-revo .callout h1 {
+    color: #fff;
+    margin-bottom: 15px;
+    /* line-height: 1.3; */
+    font-size: 80px;
+	font-weight: bolder;
+}
+
+section.slider-revo .desc {
+    color: #fff;
+    margin-bottom: 15px;
+    line-height: 1.3;
+    font-size: 22px;
+}
+
+.homepage-1 .facility-list{
+	z-index: 22;
+    position: relative;
+	margin-bottom: 0px;
+	background: #E2E3DE;
+}
+
 .homepage-1 .Gym-Display {
 	line-height: 80px !important;
 }
@@ -74,10 +127,23 @@
 	background: url(../images/tone-trek.jpg) 0 0 no-repeat;
 }
 .homepage-1 .aerobics {
-	background: url(../images/mind-blaze.jpg) 0 0 no-repeat;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url(../images/mind-blaze.jpg) 0 0 no-repeat;
 }
+
+/* .row .facility-list .body-building:hover{
+	width: 32%;
+	height: 100px;
+}
+.row .facility-list .yoga:hover{
+	width: 32%;
+	height: 100px;
+}
+.row .facility-list .aerobics:hover{
+	width: 32%;
+	height: 100px;
+} */
 .homepage-1 .facility-list-wrap {
-	margin-top: -103px;
+	background: #E2E3DE;
 }
 .homepage-1  .facility-list {
 	padding: 0px 15px;
@@ -90,6 +156,7 @@
 	padding-top: 89px;
 	min-height: 215px;
 }
+
 .homepage-1 .build span {
 	font-size: 16px;
 	color: #e7caff;
@@ -125,11 +192,51 @@
 }
 
 .homepage-1 .fitfab-gym-wrap {
-	padding-top: 65px;
-	padding-bottom: 82px;
-	background: url(../images/metaform.jpg) bottom right no-repeat;
-	background-color: #fff;
+    padding-top: 100px;
+    padding-bottom: 82px;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url(../images/fitz-images.jpg) bottom left no-repeat;
+    background-color: #E2E3DE;
+    background-size: contain;
 }
+
+/* .fitfab-gym-wrap{
+	background-color: #9535f0;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 70%;
+	height: 200px;
+	margin: 10px;
+	border: 10px;
+	box-shadow: 0px 3px 12px #9535f0;
+	transform: translate(400%);
+	transition: transform 0.8s ease;
+ }
+ 
+ .fitfab-gym-wrap:nth-of-type(even){
+	transform: translate(-400%);
+ }
+
+ .fitfab-gym-wrap{
+	transform: translate(0);
+ }
+
+ .fitfab-gym-wrap h2{
+	font-size: 45px;
+ } */
+
+ .homepage-1 .fitfab-gym-wrap .head-global h2{
+	color: #fff;
+ }
+ .homepage-1 .fitfab-gym-wrap .head-global p{
+	color: #fff;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif !important;
+ }
+
+
+
 .homepage-1 .head-global h2 {
 	margin-bottom: 30px;
 	font-family: 'Raleway', sans-serif !important;
@@ -140,6 +247,7 @@
 .homepage-1 .fit-description h3 {
 	padding-bottom: 20px;
 	font-family: 'Oswald', sans-serif !important;
+	color: #000;
 }
 .homepage-1 .fit_list-block {
 	min-height: 209px;
@@ -157,6 +265,7 @@
 	text-align: right;
 	margin-bottom: 17px;
 	font-family: 'Raleway', sans-serif !important;
+	color: #fff;
 }
 .homepage-1  .fit_sexy h1 > strong {
 	font-size: 100px;
@@ -253,7 +362,7 @@
 }
 .homepage-1 .team-info > strong {
 	font-size: 48px;
-	color: #020203;
+	color: #fff;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 900;
 	text-transform: uppercase;
@@ -265,13 +374,23 @@
 .homepage-1 .team-info_wrap {
 	padding-top: 86px;
 	padding-bottom: 95px;
-	background: #fff url(../images/developer-team.jpg) left bottom no-repeat;
+	background:  linear-gradient(
+		rgba(164, 135, 103, 0.5),
+		rgba(164, 135, 103, 0.5)), url(../images/metaform2.jpg) right bottom no-repeat;
+	background-color: #A28769;
 }
+.homepage-1 .team-info_wrap .head-global p{
+	color: #fff;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif !important;
+}
+
 .homepage-1 .team-info {
 	padding-top: 149px;
 }
 .homepage-1 .team-info_wrap .head-global h2 {
 	margin-bottom: 20px;
+	color: #fff;
 }
 
 #owl-slider1{
@@ -303,8 +422,51 @@
 	color: #868c9e;
 	font-family: 'Oswald', sans-serif;
 	margin-top: 8px;
-	display: block;
+	justify-content: baseline;
+	flex-direction: row;
+	justify-content: space-between;
+	display: flex;
 }
+
+.homepage-1 .slider-content span a{
+	font-size: 15px;
+	color: #868c9e;
+	transition: background-color 0.3s ease;
+}
+.homepage-1 .slider-content span a :hover {
+	font-size: 20px;
+	color: rgb(0, 0, 0);
+	text-decoration: none; /* Optional: Remove underline if needed */
+  /* Add the glow animation */
+  animation: glowing-shadow 2s infinite;
+  border-radius: 20%;
+
+}
+.head-global p{
+	font-size: 21px;
+}
+
+.homepage-1 .fit-description h3{
+	color: #fff;
+ }
+
+@keyframes glowing-shadow {
+	0% {
+	  /* Initial glow settings */
+	  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8); /* Adjust the glow color and size as needed */
+	  /* font-size: 16px; Optional: Add initial font size again */
+	}
+	50% {
+	  /* Increased glow settings */
+	  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Adjust the glow color and size as needed */
+	  /* font-size: 20px; Adjust the font size for the hover effect */
+	}
+	100% {
+	  /* Back to the initial glow settings */
+	  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8); /* Adjust the glow color and size as needed */
+	  /* font-size: 16px; Optional: Add initial font size again */
+	}
+  }
 .homepage-1 .owl-pagination .owl-page {
 	width: 12px;
 	height: 12px;
@@ -762,9 +924,9 @@
 	left: -246px;
 	bottom: 40px;
 }
-.homepage-2 #owl-slider-hero .owl-controls.clickable{
+/* .homepage-2 #owl-slider-hero .owl-controls.clickable{
 	display: !important;
-}
+} */
 
 .homepage-2 .owl-pagination .owl-page {
 	background: #535fb5;
@@ -4477,6 +4639,20 @@ div {
 }
 
 
+/*videos */
+.video-container{
+	position: relative;
+	width: 100%;
+	height: 100vh; 
+}
+#video-background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
 
 
 /*loader*/
@@ -4564,6 +4740,7 @@ div {
 .navbar{
 	display: flex;
 	justify-content: flex-end;
+	align-items: flex-end;
 }
 
 .navbar >ul >li >a {
@@ -4578,15 +4755,12 @@ div {
 /* Team member section 	 */
 .team {
 	display: flex;
-	/* flex-wrap: wrap; */
-	/* justify-content: space-around; */
-	/* align-items: center; */
-	/* max-width: 800px; */
 	align-items: center;
 	justify-content: center;
 	margin: 0 auto;
 	padding: 20px;
 	flex-direction: column;
+	padding: 60px 20px;
   }
   
   .team-header {
@@ -4605,25 +4779,24 @@ div {
 	max-width: 200px;
 	
   }
-  
-  /* .team-member img {
-	width: 250px;
-	height: 250px;
-	border-radius: 50%;
-	object-fit: cover;
-	border: 2px solid #ccc;
-  } */
 
   .team-profile{
 	display: flex;
-	/* text-align: center;
-	align-items: center;
-	justify-content: center; */
-	width: 200px;
-	height: 200px;
+	width: 150px;
+	height: 150px;
 	border-radius: 50%;
 	object-fit: cover;
-	border: 2px solid #ccc;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	margin-bottom: 35px;
+	cursor: pointer;
+	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+  }
+  .team-profile:hover{
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
   }
   
   .team-member h3 {
@@ -4641,9 +4814,9 @@ div {
   
   .social-icons a {
 	display: inline-block;
-	width: 40px;
-	height: 40px;
-	line-height: 40px;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
 	text-align: center;
 	border-radius: 50%;
 	background-color: #333;
@@ -4654,7 +4827,7 @@ div {
   }
   
   .social-icons a:hover {
-	background-color: #555;
+	background-color: #0e0d0d;
   }
 
   /* Media Query for Responsive Design */
@@ -4668,7 +4841,7 @@ div {
 	}
   }
   
-  @media (max-width: 576px) {
+  @media (max-width: 768px) {
 	.team-header {
 	  font-size: 20px;
 	}
@@ -4707,3 +4880,45 @@ div {
   }	
 	
 	}
+
+
+/* MMA Ignite overlay styling  */
+
+.popup-modal {
+    position: fixed;
+    top: 10%;
+	left: 20%;
+    padding: 20px 0px 0px 10px;
+    margin: 50px;
+    width: 600px;
+    border-radius: 20px;
+    background-color: #eeeade;
+	box-shadow: 0 0 10px rgb(126, 154, 199);
+  }
+  
+ .close-btn {
+    position: absolute;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    background: #6d6d6d;
+    color: #111;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 900;
+  }
+
+  .close-btn :hover{
+	box-shadow: 0 0 10px rgb(45, 104, 197);
+  }
+  
+  .popup-modal h5 {
+    color: #000;
+  }
+
+  .popup-modal h5 span {
+    color: #423f3f;
+  }
