@@ -4884,41 +4884,61 @@ div {
 
 /* MMA Ignite overlay styling  */
 
+/* Default styles for larger screens */
 .popup-modal {
-    position: fixed;
-    top: 10%;
+	position: fixed;
+	top: 10%;
 	left: 20%;
-    padding: 20px 0px 0px 10px;
-    margin: 50px;
-    width: 600px;
-    border-radius: 20px;
-    background-color: #eeeade;
+	padding: 20px 0px 0px 10px;
+	margin: 50px;
+	width: 600px;
+	border-radius: 20px;
+	background-color: #eeeade;
 	box-shadow: 0 0 10px rgb(126, 154, 199);
   }
   
- .close-btn {
-    position: absolute;
-    right: 10px;
-    width: 25px;
-    height: 25px;
-    background: #6d6d6d;
-    color: #111;
-    border: none;
-    outline: none;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: 900;
+  .close-btn {
+	position: absolute;
+	right: 10px;
+	width: 25px;
+	height: 25px;
+	background: #6d6d6d;
+	color: #111;
+	border: none;
+	outline: none;
+	border-radius: 50%;
+	cursor: pointer;
+	font-size: 15px;
+	font-weight: 900;
   }
-
-  .close-btn :hover{
+  
+  .close-btn:hover {
 	box-shadow: 0 0 10px rgb(45, 104, 197);
   }
   
   .popup-modal h5 {
-    color: #000;
+	color: #000;
   }
-
+  
   .popup-modal h5 span {
-    color: #423f3f;
+	color: #423f3f;
   }
+  
+  /* Media query for screens with a maximum width of 767px */
+  @media (max-width: 767px) {
+	.popup-modal {
+	  top: 5%;
+	  left: 5%;
+	  margin: 10px;
+	  width: 90%;
+	}
+  
+	.close-btn {
+	  right: 5px;
+	  top: 5px;
+	  width: 20px;
+	  height: 20px;
+	  font-size: 12px;
+	}
+  }
+  

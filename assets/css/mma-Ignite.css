@@ -1,3 +1,4 @@
+Default styles for larger screens
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -20,12 +21,8 @@ body {
   width: 170px;
   height: 75px;
 }
-.container {
-  margin: 20px;
-  padding: 20px;
-}
 
-.assessmentContainer {
+.container, .assessmentContainer {
   margin: 20px;
   padding: 20px;
 }
@@ -33,11 +30,6 @@ body {
 h4 {
   font-size: 28px;
   color: #fff;
-}
-
-h4 {
-  font-size: 24px;
-  color: #000;
 }
 
 h3 {
@@ -50,109 +42,55 @@ p {
   color: #666;
 }
 
-  /* Styling for the close button */
-
-  
 .week {
-  /* background-color: #f0f0f0;
+  background-color: #f0f0f0;
   padding: 10px;
   margin: 15px;
   border: 1px solid #ccc;
-  height: 150px; */
+  height: 300px;
   border-radius: 20px;
-  /* width: calc(15%); */
+  width: calc(45%);
   float: left;
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   cursor: pointer;
 }
 
-.week {
-    background-color: #f0f0f0;
-    padding: 10px;
-    margin: 15px;
-    border: 1px solid #ccc;
-    height: 300px;
-    border-radius: 20px;
-    width: calc(45%);
-    float: left;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    cursor: pointer;
+.week1, .week2, .week3, .week4, .week5, .week6, .week7 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 20px;
+  width: calc(45%);
+  float: left;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
 }
 
+/* Media query for screens with a maximum width of 767px */
 @media (max-width: 767px) {
-  .week {
-    background-color: #f0f0f0;
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid #ccc;
-    height: 300px;
-    border-radius: 20px;
-    width: 100%;
-    float: left;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  .logo {
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 120px;
+    height: 50px;
   }
-}
 
-.week1 {
-  background-image: url("../images/week1.jpg");
-  background-size: cover;
-}
+  .container, .assessmentContainer {
+    margin: 10px;
+    padding: 10px;
+  }
 
-.week2 {
-  background-image: url("../images/week2.jpg");
-  background-size: cover;
-}
-.week3 {
-  background-image: url("../images/week3.jpg");
-  background-size: cover;
-}
-.week4 {
-  background-image: url("../images/week4.jpg");
-  background-size: cover;
-}
-.week5 {
-  background-image: url("../images/week5.jpg");
-  background-size: cover;
-}
-.week6 {
-  background-image: url("../images/week6.jpg");
-  background-size: cover;
-}
-.week7 {
-  background-image: url("../images/week7.jpg");
-  background-size: cover;
-}
+  h4 {
+    font-size: 24px;
+  }
 
-.footer {
-  clear: both;
-  background-color: #1e1e28;
-}
+  h3 {
+    font-size: 18px;
+  }
 
-.copy-right p {
-  color: #fff;
-  font-size: large;
-}
-.theme-design {
-  color: #fff;
-  font-size: large;
-  font-weight: 600;
-}
-/* .row {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 10px;
-} */
-.socialicons ul {
-  display: flex;
-  margin-left: 20px;
-  list-style: none;
-}
-.socialicons ul li {
-  margin-left: 20px;
-  list-style: none;
-}
-.fab {
-  /* width: 25px;
-    height: 25px; */
-  color: #666;
+  .week, .week1, .week2, .week3, .week4, .week5, .week6, .week7 {
+    width: 100%;
+    margin: 10px 0;
+  }
 }
